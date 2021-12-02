@@ -8,7 +8,31 @@ Created on Sun Nov 28 22:18:18 2021
 import numpy as np
 from matplotlib import pyplot as plt
 import math as math
-
+""" Welcome to the Lindenmayer System Program we created for our exam project!
+    We chose this project because it looked interesting and seemed like a good
+    way to combine some things we had learned in Math 1 this semester as well
+    as what we learned in programming.
+    
+    Lindenmayer systems were created to model natural systems using simple and 
+    iterable rules. This program will display a couple of these systems: Koch and
+    Sierpinski.
+    
+    What this program does is it first asks you to select a Lindenmayer system.
+    Then it will ask for a number of iterations. 
+    NOTE! The number of iterations is limited to prevent excessive 
+    computational runtime.
+    Then the program will give you the option to plot the system. This will 
+    display a plot with the selected Lindenmayer System
+    
+    Enjoy!
+    
+    -Veronica, Alex and Dylan
+"""
+"""
+This function takes the inputs of System(Koch or Sierpinski) and N(iterations)
+and creates a string based on a series of rules which correspond to each system.
+These rules are stored in a dicitonary.
+"""
 def LindIter(System, N):
 
     #set empty value
