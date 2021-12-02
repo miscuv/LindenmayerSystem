@@ -93,10 +93,10 @@ def turtlePlot(turtleCommands):
         else:
             coords = np.append(coords,[np.add(np.array(coords[-1]),\
                                               np.dot(angle,steps),dtype=float)],axis = 0)
-        xs=[x[0] for x in coords]
-        ys=[x[1] for x in coords]
-    plt.plot(xs,ys)
-    plt.show()
+        xs=[x[0] for x in coords] #set the values for the x axis of the plot to be the first column of the coordinates
+        ys=[x[1] for x in coords] #set the values for the x axis of the plot to be the second column of the coordinates
+    plt.plot(xs,ys) #plot the coordinates
+    plt.show() #show the plot
   
 def Main():
     while True:
