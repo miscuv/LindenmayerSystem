@@ -100,7 +100,7 @@ def turtlePlot(turtleCommands):
 """
  This function takes the series of coordinates and it plotts it into a line plot.
  
- created by:    Miscu Veronica 215159@dtu.dk and 
+ created by:    Miscu Veronica 215159@dtu.dk and Dylan Bailey s215228@dtu.dk
 
  """  
 def Main():
