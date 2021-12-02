@@ -97,7 +97,12 @@ def turtlePlot(turtleCommands):
         ys=[x[1] for x in coords]
     plt.plot(xs,ys)
     plt.show()
-  
+"""
+ This function takes the series of coordinates and it plotts it into a line plot.
+ 
+ created by:    Miscu Veronica 215159@dtu.dk and 
+
+ """  
 def Main():
     while True:
 
