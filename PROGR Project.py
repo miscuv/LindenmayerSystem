@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sun Nov 28 22:18:18 2021
-
-@author: Asus
-"""
-
 import numpy as np
 from matplotlib import pyplot as plt
 import math as math
@@ -26,12 +19,13 @@ import math as math
     
     Enjoy!
     
-    -Veronica, Alex and Dylan
+     -Veronica, Alex and Dylan
 """
 """
 This function takes the inputs of System(Koch or Sierpinski) and N(iterations)
 and creates a string based on a series of rules which correspond to each system.
 These rules are stored in a dicitonary.
+created by: Dylan Bailey s215228@dtu.dk
 """
 def LindIter(System, N):
 
@@ -57,7 +51,14 @@ def LindIter(System, N):
     LindList = LindenmayerString
 
     return(LindList,System,N)  
+"""
+This function takes the inputs LindList, System and N and converts the
+string of letters given by LindIter into step lengths and angles which 
+correspond to the rules of the system. The return is a string of step 
+lengths and angles called turtleCommands
 
+created by:     Dylan Bailey s215228@dtu.dk
+"""
 def turtlegraph(lindList, System, N):
     turtleCommands = ''          
     if System == 1:
@@ -72,7 +73,13 @@ def turtlegraph(lindList, System, N):
     turtleCommands = turtleCommands.rstrip()
     turtleCommands = turtleCommands.split(" ")         
     return turtleCommands
-        
+ """
+ This function takes the string turtleCommands and converts the step length and
+ turn angle into a series of coordinates which can then be plotted.
+ 
+ created by:    Dylan Bailey 215228@dtu.dk
+
+ """
 def turtlePlot(turtleCommands):
     coords = np.array([[0,0]])
     steps = np.array([eval(turtleCommands[0]),0], dtype = float)
@@ -90,7 +97,7 @@ def turtlePlot(turtleCommands):
         ys=[x[1] for x in coords]
     plt.plot(xs,ys)
     plt.show()
-    
+  
 def Main():
     while True:
 
@@ -108,7 +115,6 @@ def Main():
             N = int(input("Choose the number of iterations: "))
             if System != 1 and System != 2:
                 print('There is no such type of Lindenmayer system!')
-            print(LindIter(System, N))
         if choice == 2:
             if N <= 0:
                 print('The number of iterations must be positive!')
