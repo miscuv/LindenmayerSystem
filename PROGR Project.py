@@ -77,7 +77,7 @@ def turtlegraph(lindList, System, N):
  This function takes the string turtleCommands and converts the step length and
  turn angle into a series of coordinates which can then be plotted.
  
- created by:    Dylan Bailey 215228@dtu.dk
+ created by:    Dylan Bailey 215228@dtu.dk and Miscu Veronica 215159@dtu.dk
 
  """
 def turtlePlot(turtleCommands):
@@ -97,12 +97,7 @@ def turtlePlot(turtleCommands):
         ys=[x[1] for x in coords]
     plt.plot(xs,ys)
     plt.show()
-"""
- This function takes the series of coordinates and it plotts it into a line plot.
- 
- created by:    Miscu Veronica 215159@dtu.dk and Dylan Bailey s215228@dtu.dk
 
- """  
 def Main():
     while True:
 
